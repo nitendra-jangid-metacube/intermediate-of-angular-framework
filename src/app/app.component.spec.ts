@@ -26,10 +26,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('angular-inter-assignment');
   });
 
-  it('should render title', () => {
+  it('should render links', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-inter-assignment app is running!');
+    const compiled = fixture.nativeElement as HTMLElement;    
+    expect(compiled.querySelector('#nav-link-id')?.textContent).toContain('Life Cycle Hooks');
   });
 });
